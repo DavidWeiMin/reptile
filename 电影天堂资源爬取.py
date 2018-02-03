@@ -24,7 +24,7 @@ for n in range(1,page):
         html_2.encoding = 'gb2312'
         ftp = re.findall('<a href="(.*?)">.*?</a></td>',html_2.text) # 利用正则表达式在网页源代码中的链接
         # 将获取的下载链接写入文件
-        with open('d:\\Documents\\GitHub\\reptile\\dytt.txt','a',encoding='utf-8') as f: 
+        with open('d:\\Documents\\GitHub\\reptile\\下载的资源.txt','a',encoding='utf-8') as f: 
             f.write(ftp[0] + '\n')
         time.sleep(2) # 暂停2秒以模拟人的访问速度（访问过快会被以为是机器）
 
